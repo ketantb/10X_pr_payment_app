@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,200;8..60,300;8..60,400;8..60,500;8..60,600;8..60,700;8..60,800;8..60,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container-wrapper">
+        <div>
+            <div id="payment-container">
+                <div id="p1">
+                    <h1>Payment</h1>
+                    <p>Complete your pro membership</p>
+                </div>
+                <div id="p2">
+                    <div>
+                        <span id="dollar">$</span><input onchange="captureAmt()" id="amt" type="number" min="0" /><span
+                            id="usd">USD</span>
+                    </div>
+                    <div id="dummy-border"></div>
+                    <div>
+                        <section>
+                            <div>
+                                <span><img class="green-tick" src="./assets/like.png"
+                                        alt="right" /></span><span>Messaging</span>
+                            </div>
+                            <div>
+                                <span><img class="green-tick" src="./assets/like.png"
+                                        alt="right" /></span><span>Analytics</span>
+                            </div>
+                        </section>
+                        <section>
+                            <div>
+                                <span><img class="green-tick" src="./assets/like.png"
+                                        alt="right" /></span><span>Support</span>
+                            </div>
+                            <div>
+                                <span><img class="green-tick" src="./assets/like.png"
+                                        alt="right" /></span><span>Discounts</span>
+                            </div>
+                        </section>
+                    </div>
+                    <p>Know more</p>
+                </div>
+                <div id="p3">
+                    <h3>Pay with card</h3>
+                    <div id="atm-inputs-cont">
+                        <input class="atm-inputs" type="text" maxlength="4" />
+                        <input class="atm-inputs" type="text" maxlength="4" />
+                        <input class="atm-inputs" type="text" maxlength="4" />
+                    </div>
+                    <div>
+                        <input class="CV-MM" type="text" placeholder="mm/yy" />
+                        <input class="CV-MM" type="text" placeholder="CVV" maxlength="3" />
+                    </div>
+                    <div>
+                        <!-- <a href="./confirmpage.html"> -->
+                        <button id="payment-btn">Make Payment</button>
+                        <!-- </a> -->
+                    </div>
+                </div>
+            </div>
+            <div id="confirm-container">
+                <h1>Remove?</h1>
+                <p>Please confirm the changes, you can't redo this again.</p>
+                <div>
+                    <button id="confirm-btn">Confirm</button>
+                </div>
+                <p id="take-me-back">Take me back</p>
+            </div>
+            <div id="success-popup">
+                <div>
+                    <img id="success-img" src="./assets/success1.jpg">
+                </div>
+                <h1>Success</h1>
+                <p>Your payment was processed</p>
+            </div>
+        </div>
+        <div id="invoice-container">
+            <section>
+                <h1>Invoice</h1>
+                <a style="cursor: pointer; font-weight: 800; font-size: 13px;" onMouseOver="this.style.color='purple'"
+                    onmouseout="this.style.color='black'">Download</a>
+            </section>
+            <section>
+                <div>
+                    <p>Pro membership</p>
+                    <p>$<span id="invoice-amt"></span></p>
+                </div>
+                <div>
+                    <p>Platform fee</p>
+                    <p>$<span>10</span></p>
+                </div>
+            </section>
+            <section>
+                <p>Total amount</p>
+                <p>$<span id="invoice-total-amt"></span></p>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
