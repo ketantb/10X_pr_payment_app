@@ -7,11 +7,12 @@ body{
     background-color: #e8eaee;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 
 #container-wrapper{
     height: 100vh;
-    /*width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,11 +24,11 @@ body{
 }
 
 #p1{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
     background-color: #ffffff;
     /* height: 100px; */
-    padding: 40px 25px 25px 25px;
+    padding: 4rem 2.5rem 2.5rem 2.5rem;
 }
 
 #p1>p{
@@ -200,10 +201,11 @@ body{
     text-align: center;
 }
 #confirm-container> p:nth-child(2){
-    margin-top: 20px;
+    font-size: 17px;
+    margin-top: 25px;
 }
 #confirm-container>div>button{
-    margin-top: 20px; width: 100%; height: 50px; 
+    margin-top: 25px; width: 100%; height: 50px; 
     font-size: 15px; letter-spacing: 0.5px;
     border: none; border-radius: 5px; 
     background-color: rgb(245, 77, 77); color: #ffff;
@@ -213,7 +215,7 @@ body{
     background-color: red;
 }
 #confirm-container>:last-child{
-    margin-top: 20px; text-align: center;
+    margin-top: 25px; text-align: center;
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
@@ -225,8 +227,8 @@ body{
 
 #success-popup{
     position: absolute;
-    top: 20%; left: 38.6%;
-    transform: translate(-100% -100%);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
     margin: auto;
     height: 300px; width: 350px;
     background-color: #009a34;
@@ -301,7 +303,35 @@ body{
 }
 
 
-
+@media only screen and (max-width: 510px){
+    /* html{
+        font-size: 48%;
+    } */
+    body{
+        background-color: orange;
+        overflow-x: hidden;
+        overflow-x: hidden;
+    }
+    /* #container-wrapper{
+        margin-left: 13%;
+    } */
+    #payment-container{
+        width: 370px
+    }
+    #confirm-container {
+        width: 280px
+    }
+    #success-popup{
+        width: 280px;
+    }
+    #invoice-container{
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 25px;
+        width: 370px;
+        background-color: #fff;
+    }
+}
 
 
 

@@ -16,75 +16,73 @@
 
 <body>
     <div id="container-wrapper">
-        <div>
-            <div id="payment-container">
-                <div id="p1">
-                    <h1>Payment</h1>
-                    <p>Complete your pro membership</p>
-                </div>
-                <div id="p2">
-                    <div>
-                        <span id="dollar">$</span><input onchange="captureAmt()" id="amt" type="number" min="0" /><span
-                            id="usd">USD</span>
-                    </div>
-                    <div id="dummy-border"></div>
-                    <div>
-                        <section>
-                            <div>
-                                <span><img class="green-tick" src="./assets/like.png"
-                                        alt="right" /></span><span>Messaging</span>
-                            </div>
-                            <div>
-                                <span><img class="green-tick" src="./assets/like.png"
-                                        alt="right" /></span><span>Analytics</span>
-                            </div>
-                        </section>
-                        <section>
-                            <div>
-                                <span><img class="green-tick" src="./assets/like.png"
-                                        alt="right" /></span><span>Support</span>
-                            </div>
-                            <div>
-                                <span><img class="green-tick" src="./assets/like.png"
-                                        alt="right" /></span><span>Discounts</span>
-                            </div>
-                        </section>
-                    </div>
-                    <p>Know more</p>
-                </div>
-                <div id="p3">
-                    <h3>Pay with card</h3>
-                    <div id="atm-inputs-cont">
-                        <input class="atm-inputs" type="text" maxlength="4" />
-                        <input class="atm-inputs" type="text" maxlength="4" />
-                        <input class="atm-inputs" type="text" maxlength="4" />
-                    </div>
-                    <div>
-                        <input class="CV-MM" type="text" placeholder="mm/yy" />
-                        <input class="CV-MM" type="text" placeholder="CVV" maxlength="3" />
-                    </div>
-                    <div>
-                        <!-- <a href="./confirmpage.html"> -->
-                        <button id="payment-btn">Make Payment</button>
-                        <!-- </a> -->
-                    </div>
-                </div>
+        <div id="payment-container">
+            <div id="p1">
+                <h1>Payment</h1>
+                <p>Complete your pro membership</p>
             </div>
-            <div id="confirm-container">
-                <h1>Remove?</h1>
-                <p>Please confirm the changes, you can't redo this again.</p>
+            <div id="p2">
                 <div>
-                    <button id="confirm-btn">Confirm</button>
+                    <span id="dollar">$</span><input onchange="captureAmt()" id="amt" type="number" min="0" /><span
+                        id="usd">USD</span>
                 </div>
-                <p id="take-me-back">Take me back</p>
-            </div>
-            <div id="success-popup">
+                <div id="dummy-border"></div>
                 <div>
-                    <img id="success-img" src="./assets/success1.jpg">
+                    <section>
+                        <div>
+                            <span><img class="green-tick" src="./assets/like.png"
+                                    alt="right" /></span><span>Messaging</span>
+                        </div>
+                        <div>
+                            <span><img class="green-tick" src="./assets/like.png"
+                                    alt="right" /></span><span>Analytics</span>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <span><img class="green-tick" src="./assets/like.png"
+                                    alt="right" /></span><span>Support</span>
+                        </div>
+                        <div>
+                            <span><img class="green-tick" src="./assets/like.png"
+                                    alt="right" /></span><span>Discounts</span>
+                        </div>
+                    </section>
                 </div>
-                <h1>Success</h1>
-                <p>Your payment was processed</p>
+                <p>Know more</p>
             </div>
+            <div id="p3">
+                <h3>Pay with card</h3>
+                <div id="atm-inputs-cont">
+                    <input class="atm-inputs" type="text" maxlength="4" />
+                    <input class="atm-inputs" type="text" maxlength="4" />
+                    <input class="atm-inputs" type="text" maxlength="4" />
+                </div>
+                <div>
+                    <input class="CV-MM" type="text" placeholder="mm/yy" />
+                    <input class="CV-MM" type="text" placeholder="CVV" maxlength="3" />
+                </div>
+                <div>
+                    <!-- <a href="./confirmpage.html"> -->
+                    <button id="payment-btn">Make Payment</button>
+                    <!-- </a> -->
+                </div>
+            </div>
+        </div>
+        <div id="confirm-container">
+            <h1>Remove?</h1>
+            <p>Please confirm the changes, you can't redo this again.</p>
+            <div>
+                <button id="confirm-btn">Confirm</button>
+            </div>
+            <p id="take-me-back">Take me back</p>
+        </div>
+        <div id="success-popup">
+            <div>
+                <img id="success-img" src="./assets/success1.jpg">
+            </div>
+            <h1>Success</h1>
+            <p>Your payment was processed</p>
         </div>
         <div id="invoice-container">
             <section>
